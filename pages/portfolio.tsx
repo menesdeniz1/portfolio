@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useState } from 'react';
 
 const Portfolio = () => {
@@ -34,19 +35,21 @@ const Portfolio = () => {
           <div className="flex justify-between items-center h-16">
             <span className="text-xl font-bold text-gray-800">Mücahid Enes Deniz</span>
             <div className="flex space-x-4">
-              {['home', 'about', 'skills', 'projects', 'contact'].map((item) => (
-                <button
-                  key={item}
-                  onClick={() => setActiveSection(item)}
-                  className={`px-3 py-2 rounded-md text-sm font-medium ${
-                    activeSection === item
-                      ? 'bg-blue-500 text-white'
-                      : 'text-gray-600 hover:bg-blue-100'
-                  }`}
-                >
-                  {item.charAt(0).toUpperCase() + item.slice(1)}
-                </button>
-              ))}
+              <Link href="/" className={`px-3 py-2 rounded-md text-sm font-medium ${
+                activeSection === 'home' ? 'bg-blue-500 text-white' : 'text-gray-600 hover:bg-blue-100'
+              }`}>
+                Home
+              </Link>
+              <Link href="/about" className={`px-3 py-2 rounded-md text-sm font-medium ${
+                activeSection === 'about' ? 'bg-blue-500 text-white' : 'text-gray-600 hover:bg-blue-100'
+              }`}>
+                About
+              </Link>
+              <Link href="/portfolio" className={`px-3 py-2 rounded-md text-sm font-medium ${
+                activeSection === 'portfolio' ? 'bg-blue-500 text-white' : 'text-gray-600 hover:bg-blue-100'
+              }`}>
+                Portfolio
+              </Link>
             </div>
           </div>
         </div>
@@ -90,46 +93,6 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
-
-      {/* Projects Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Projects</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <div
-                key={index}
-                className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow"
-              >
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {project.tech.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-800 text-white py-8">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <p className="mb-4">© 2025 Mücahid Enes Deniz. All rights reserved.</p>
-          <div className="flex justify-center space-x-6">
-            <a href="#" className="hover:text-blue-400">GitHub</a>
-            <a href="#" className="hover:text-blue-400">LinkedIn</a>
-            <a href="#" className="hover:text-blue-400">Twitter</a>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };
