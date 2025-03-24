@@ -13,9 +13,6 @@ export default function Navbar() {
         <Link href="/portfolio" className="hover:text-blue-400">
           Portfolio
         </Link>
-        <Link href="/contact" className="hover:text-blue-400">
-          Contact
-        </Link>
       </div>
     </nav>
   );
