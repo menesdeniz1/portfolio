@@ -1,10 +1,14 @@
+import type { MetadataRoute } from 'next';
+
 const SITE_URL = 'https://menesdeniz.com';
 
-export default async function sitemap() {
-  const routes = [''].map((route) => ({
-    url: `${SITE_URL}${route}`,
-    lastModified: new Date().toISOString()
-  }));
-
-  return [...routes];
+export default function sitemap(): MetadataRoute.Sitemap {
+  return [
+    {
+      url: SITE_URL,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 1,
+    },
+  ];
 }

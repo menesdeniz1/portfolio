@@ -5,7 +5,7 @@ export default function About() {
   const skills = ['Python', 'C++', 'C#', 'OpenCV', 'YOLO', 'Siemens S7 PLC'];
 
   return (
-    <section id="about" className="py-24 max-w-[900px] mx-auto">
+    <section id="about" className="py-24 max-w-[900px] mx-auto scroll-mt-24">
       <SectionHeading number="01" title="About Me" />
       
       <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mt-10">
@@ -22,8 +22,8 @@ export default function About() {
           <p>Here are a few technologies I’ve been working with recently:</p>
           
           <ul className="grid grid-cols-2 gap-x-3 gap-y-2 font-mono text-[13px] text-[#8892b0] mt-5 m-0 p-0 list-none">
-            {skills.map((skill, i) => (
-              <li key={i} className="relative pl-5 before:content-['▹'] before:absolute before:left-0 before:text-[#64ffda] before:text-[14px]">
+            {skills.map((skill) => (
+              <li key={skill} className="relative pl-5 before:content-['▹'] before:absolute before:left-0 before:text-[#64ffda] before:text-[14px]">
                 {skill}
               </li>
             ))}
@@ -34,7 +34,7 @@ export default function About() {
           <div className="relative rounded bg-[#64ffda] group transition-all duration-300">
             <div className="absolute top-4 left-4 w-full h-full border-2 border-[#64ffda] rounded z-0 transition-all duration-300 group-hover:top-3 group-hover:left-3"></div>
             <div className="relative z-10 mix-blend-multiply filter grayscale contrast-125 transition-all duration-300 group-hover:filter-none group-hover:mix-blend-normal bg-[#112240] rounded overflow-hidden aspect-square flex items-center justify-center">
-               <div className="text-[#64ffda] font-mono text-[100px] opacity-20 group-hover:opacity-10 transition-opacity">
+               <div className="text-[#64ffda] font-mono text-[100px] opacity-20 group-hover:opacity-10 transition-opacity select-none" aria-hidden="true">
                  M
                </div>
             </div>

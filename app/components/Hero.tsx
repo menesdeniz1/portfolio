@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <section id="hero" className="flex flex-col justify-center items-start min-h-[100vh] p-0 m-0 w-full max-w-[1000px]">
+    <section id="hero" className="flex flex-col justify-center items-start min-h-[calc(100dvh-6rem)] p-0 m-0 w-full max-w-[1000px] scroll-mt-24">
       <div className="mono-text mb-7 ml-1">
         Hi, my name is
       </div>
