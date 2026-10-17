@@ -1,37 +1,21 @@
-import type { NextConfig } from 'next';
-import createMDX from '@next/mdx';
-import postgres from 'postgres';
-
-export const sql = postgres(process.env.POSTGRES_URL!, {
-  ssl: 'allow'
-});
-
+import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
-  pageExtensions: ['mdx', 'ts', 'tsx'],
-  async redirects() {
-    if (!process.env.POSTGRES_URL) {
-      return [];
-    }
-
-    let redirects = await sql`
-      SELECT source, destination, permanent
-      FROM redirects;
-    `;
-
-    return redirects.map(({ source, destination, permanent }) => ({
-      source,
-      destination,
-      permanent: !!permanent
-    }));
+  poweredByHeader: false,
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          {
+            key: "Permissions-Policy",
+            value: "camera=(), microphone=(), geolocation=()",
+          },
+          { key: "X-Frame-Options", value: "DENY" },
+        ],
+      },
+    ];
   },
-  // Note: Using the Rust compiler means we cannot use
-  // rehype or remark plugins. If you need them, remove
-  // the `experimental.mdxRs` flag.
-  experimental: {
-    mdxRs: { mdxType: 'gfm' }
-  }
- };
-
-const withMDX = createMDX({});
-
-export default withMDX(nextConfig);
+};
+export default nextConfig;
