@@ -4,28 +4,36 @@ import SectionHeading from './SectionHeading';
 
 const PROJECTS = [
   {
-    title: 'Gendarmerie Field Guide',
-    description: 'An unofficial offline form and content-navigation prototype using React Native, Expo and schema validation. Includes local draft storage and PDF generation; intended for synthetic demonstration data, not operational use.',
-    tech: ['React Native', 'Expo', 'Zod', 'Local Storage'],
-    github: 'https://github.com/menesdeniz1/jebs-mobile',
+    title: 'resumefill',
+    description: 'An LLM browser agent that pre-fills job-application forms from a CV and never submits them: structured-output CV analysis and fit scoring, code-enforced submit blocking, 190 tests and ruff/mypy/Playwright CI.',
+    tech: ['Python', 'Gemini', 'browser-use', 'Playwright', 'Streamlit'],
+    github: 'https://github.com/menesdeniz1/resumefill',
     external: '#',
     align: 'right', // Text on right, image on left
   },
   {
-    title: 'Graph Partitioning Experiments',
-    description: 'Educational local-search, spectral-clustering and genetic approaches to graph partitioning, with deterministic tests and explicit limitations on balance and optimality.',
-    tech: ['Python', 'NetworkX', 'SciPy', 'Algorithms'],
-    github: 'https://github.com/menesdeniz1/graph-partitioning-problem',
+    title: 'KeepMoney',
+    description: 'A multi-user price and stock tracker with a web dashboard and Telegram bot on a shared service layer: asyncio scan worker, Docker Compose stack, 1,100+ automated tests and a 7-job GitHub Actions CI.',
+    tech: ['FastAPI', 'PostgreSQL', 'React/TypeScript', 'Docker'],
+    github: 'https://github.com/menesdeniz1/keepmoney',
     external: '#',
     align: 'left', // Text on left, image on right
   },
   {
-    title: 'M&M Chocolate Detector',
-    description: 'A university team project exploring YOLO-based M&M detection, threaded camera processing and serial/Bluetooth messages to an Arduino LCD receiver. Hardware throughput and sorting performance are not certified.',
-    tech: ['Python', 'OpenCV', 'YOLO', 'Arduino'],
-    github: 'https://github.com/menesdeniz1/capstone-project',
+    title: 'KeepAwake',
+    description: 'A cross-platform tray utility for idle scheduling and power management with native Windows, macOS and X11 backends, a SHA-256-verified auto-updater and a tag-triggered release pipeline; 100 tests on CI.',
+    tech: ['Python', 'PySide6/Qt', 'Win32 · macOS · X11', 'GitHub Actions'],
+    github: 'https://github.com/menesdeniz1/keepawake',
     external: '#',
     align: 'right',
+  },
+  {
+    title: 'M&M Colour Detector (Capstone)',
+    description: 'A university team project (three people): YOLOv8 colour detection with threaded camera processing and Bluetooth serial messages to an Arduino. Hardware throughput and sorting performance are not certified.',
+    tech: ['Python', 'OpenCV', 'YOLOv8', 'Arduino'],
+    github: 'https://github.com/menesdeniz1/capstone-project',
+    external: '#',
+    align: 'left',
   }
 ];
 

@@ -2,7 +2,7 @@ import React from 'react';
 import SectionHeading from './SectionHeading';
 
 export default function About() {
-  const skills = ['Python', 'C++', 'C#', 'OpenCV', 'YOLO', 'Siemens S7 PLC'];
+  const skills = ['C++17 / Qt 6', 'Python', 'OpenCV', 'YOLO · ONNX Runtime · OpenVINO', 'Siemens S7 · OPC UA', 'FastAPI · PostgreSQL'];
 
   return (
     <section id="about" className="py-24 max-w-[900px] mx-auto">
@@ -14,7 +14,7 @@ export default function About() {
             Hello! My name is Mücahid Enes Deniz and I enjoy creating things that live on the internet and in the physical world. My interest in software engineering started back in high school and evolved into building robust production systems in computer vision and industrial automation.
           </p>
           <p>
-            I have worked at <span className="text-[#64ffda]">Kastamonu Entegre</span> on camera-based quality inspection and software integration for manufacturing environments. My interests include computer vision, backend development and automation.
+            At <span className="text-[#64ffda]">Kastamonu Entegre</span> I build industrial machine-vision systems: a patented fiber analysis system running at three plants and a parquet defect inspection pipeline on a live production line. I also build LLM-agent and full-stack side projects, and I develop with Claude Code.
           </p>
           <p>
             I also recently graduated from <span className="text-[#64ffda]">Bahçeşehir University</span> with a B.Sc. in Computer Engineering on a full scholarship.

@@ -11,31 +11,33 @@ const JOBS = [
     date: 'Jul 2025 - Present',
     url: '#',
     points: [
-      "Developed software for camera-based industrial quality inspection and supported installations across factory sites.",
-      "Worked on inspection algorithms, camera configuration and software integration with PLC communication provided by the electrical team.",
-      "Managed AI Line Inspection with YOLOv11 and high-speed image stitching with Basler cameras.",
-      "Implemented Dimensional Control with OpenCV and Weighbridge 3D scanning with SICK LiDAR for volume estimation."
+      "Patented fiber analysis system: C++/Python machine vision for MDF fibers, running at three plants; management estimates 88% lower CAPEX than the commercial alternative. Migrated it from C++17/Qt 6 to a Dockerized Python stack (ONNX Runtime YOLO segmentation, OpenCV, PostgreSQL, Redis) with PLC-driven lens automation and autofocus.",
+      "Parquet defect inspection: a C++17/Qt 6 five-stage pipeline with Basler line-scan acquisition, image stitching and YOLO inference via ONNX Runtime/OpenVINO, bounded queues and OPC UA reject signals, running on a live production line.",
+      "Panel geometry inspection (team of three): led production hardening of an MDF squareness system with OpenCV, Basler and Siemens S7 — fail-closed PLC-derived calibration, watchdog, rollback packaging and characterization tests.",
+      "Truck load measurement: fused four SICK LiDAR streams with motion compensation for cargo volume estimation, with Flask/PostgreSQL dashboards and weighbridge integration.",
+      "Management projected EUR 11.57M combined impact upon planned rollout of these four projects."
     ]
   },
   {
     id: 'talentree',
-    company: 'TalenTree',
-    title: 'Intern',
+    company: 'Kastamonu Entegre · TalenTree',
+    title: 'Long Term Intern',
     date: 'Jul 2024 - Jun 2025',
     url: '#',
     points: [
-      "Contributed to the design, implementation, deployment, and maintenance of industrial AI, automation, and computer vision systems.",
-      "Served as Scrum Master in a Sustainable Supplier Selection project utilizing Agile methodologies."
+      "TalenTree long-term internship at Kastamonu Entegre (Hayat Holding).",
+      "Supported industrial AI software development and deployment.",
+      "Served as Scrum Master on a Sustainable Supplier Selection project."
     ]
   },
   {
     id: 'harpeon',
     company: 'Harpeon',
-    title: 'Intern',
+    title: 'Mobile Application Development Intern',
     date: 'Jun 2023 - Aug 2023',
     url: '#',
     points: [
-      "Developed a Weather app with external API integrations.",
+      "Built an API-integrated weather app.",
       "Prototyped an office-reservation UI using React Native and Expo."
     ]
   }

@@ -16,7 +16,7 @@ export default function Hero() {
       </h2>
       
       <p className="max-w-[540px] text-[#8892b0] text-lg md:text-xl leading-relaxed mb-12">
-        I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences and industrial automation pipelines. Currently, I’m focused on deploying high-performance C++ & Computer Vision solutions for real-world manufacturing environments.
+        I’m a software engineer building industrial machine-vision systems in C++ and Python — from cameras, lenses and PLCs to model inference and operator UIs. My fiber analysis software runs at three plants and my parquet inspection pipeline runs on a live production line.
       </p>
       
       <a href="#work" className="btn-outline">
