@@ -35,7 +35,7 @@ const JOBS = [
     id: 'harpeon',
     company: 'Harpeon',
     title: 'Mobile Application Development Intern',
-    date: 'Jun 2023 - Aug 2023',
+    date: 'Jul 2023 - Sep 2023',
     url: '#',
     points: [
       "Built an API-integrated weather app.",
