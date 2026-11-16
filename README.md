@@ -8,4 +8,4 @@ The earlier site was based on [leerob/next-mdx-blog](https://github.com/leerob/n
 
 Use Node.js 22: `npm ci`, `npm run dev`. Build with `npm run build`. Google font downloads require internet access. Source publication does not deploy the site or verify ownership of referenced external domains.
 
-Project descriptions are summaries, not measured business outcomes. Replace/update contact details locally as needed; no CV PDF or private company source is bundled. Dependencies retain their own licenses.
+Project descriptions are summaries, not measured business outcomes. Replace/update contact details locally as needed; a one-page CV PDF without a phone number is bundled (`public/resume.pdf`); no private company source is included. Dependencies retain their own licenses.
