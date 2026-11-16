@@ -11,11 +11,12 @@ const JOBS = [
     date: 'Jul 2025 - Present',
     url: '#',
     points: [
-      "Patented fiber analysis system: C++/Python machine vision for MDF fibers, running at three plants; management estimates 88% lower CAPEX than the commercial alternative. Migrated it from C++17/Qt 6 to a Dockerized Python stack (ONNX Runtime YOLO segmentation, OpenCV, PostgreSQL, Redis) with PLC-driven lens automation and autofocus.",
-      "Parquet defect inspection: a C++17/Qt 6 five-stage pipeline with Basler line-scan acquisition, image stitching and YOLO inference via ONNX Runtime/OpenVINO, bounded queues and OPC UA reject signals, running on a live production line.",
-      "Panel geometry inspection (team of three): led production hardening of an MDF squareness system with OpenCV, Basler and Siemens S7 — fail-closed PLC-derived calibration, watchdog, rollback packaging and characterization tests.",
-      "Truck load measurement: fused four SICK LiDAR streams with motion compensation for cargo volume estimation, with Flask/PostgreSQL dashboards and weighbridge integration.",
-      "Management projected EUR 11.57M combined impact upon planned rollout of these four projects."
+      "Built three production vision systems (fiber analysis, parquet defect inspection, panel geometry inspection) as the sole developer through their first production release: wrote all of the software, from camera acquisition and model training to backend services, databases and operator interfaces.",
+      "Patented fiber analysis: vision software analyzing MDF fibers across three factories, reducing CAPEX by 88% versus the commercial alternative. Named inventor on the patent held by the employer. Basler camera acquisition, YOLO segmentation through ONNX Runtime, Siemens S7 PLC integration, PostgreSQL and Redis.",
+      "Parquet defect inspection: a C++17/Qt 6 application with a five-stage acquisition, stitching and inference pipeline. In production on one line since June 2026, matching inspectors' pass/fail decisions on 99.83% of test products; rollout to 18 more lines planned.",
+      "Panel geometry inspection: diagonal and squareness measurement to within 5 mm on 8 m panels using dual Basler cameras, OpenCV and PLC derived calibration. In production on one line.",
+      "Truck load measurement: contributed to a system that fuses four SICK LiDAR streams with motion compensation for truck cargo volume estimation; in use at five sites.",
+      "Management projected EUR 11.57M combined financial impact upon planned rollout of these four projects."
     ]
   },
   {

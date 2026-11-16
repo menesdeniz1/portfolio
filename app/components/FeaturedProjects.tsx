@@ -4,16 +4,16 @@ import SectionHeading from './SectionHeading';
 
 const PROJECTS = [
   {
-    title: 'resumefill',
-    description: 'An LLM browser agent that pre-fills job-application forms from a CV and never submits them: structured-output CV analysis and fit scoring, code-enforced submit blocking, 190 tests and ruff/mypy/Playwright CI.',
-    tech: ['Python', 'Gemini', 'browser-use', 'Playwright', 'Streamlit'],
-    github: 'https://github.com/menesdeniz1/resumefill',
-    external: '#',
+    title: 'Devir',
+    description: 'A published single-player browser strategy game: five ages, 15 units, 10 towers and three AI difficulty levels, in English and Turkish. Deterministic simulation core with seeded randomness and checksummed saves, and automated tests in CI. Built by directing AI coding agents. Playable at menesdeniz.itch.io/devir.',
+    tech: ['TypeScript', 'PixiJS 8', 'Vite', 'Vitest', 'Playwright'],
+    github: 'https://github.com/menesdeniz1/devir',
+    external: 'https://menesdeniz.itch.io/devir',
     align: 'right', // Text on right, image on left
   },
   {
     title: 'KeepMoney',
-    description: 'A multi-user price and stock tracker with a web dashboard and Telegram bot on a shared service layer: asyncio scan worker, Docker Compose stack, 1,100+ automated tests and a 7-job GitHub Actions CI.',
+    description: 'A multi-user price and stock tracker with a web dashboard and Telegram bot on a shared service layer: asyncio scan worker, Docker Compose stack, automated tests and GitHub Actions CI.',
     tech: ['FastAPI', 'PostgreSQL', 'React/TypeScript', 'Docker'],
     github: 'https://github.com/menesdeniz1/keepmoney',
     external: '#',
@@ -21,7 +21,7 @@ const PROJECTS = [
   },
   {
     title: 'KeepAwake',
-    description: 'A cross-platform tray utility for idle scheduling and power management with native Windows, macOS and X11 backends, a SHA-256-verified auto-updater and a tag-triggered release pipeline; 100 tests on CI.',
+    description: 'A cross-platform tray utility for idle scheduling and power management with native Windows, macOS and X11 backends, a SHA-256-verified auto-updater and a tag-triggered release pipeline.',
     tech: ['Python', 'PySide6/Qt', 'Win32 · macOS · X11', 'GitHub Actions'],
     github: 'https://github.com/menesdeniz1/keepawake',
     external: '#',
